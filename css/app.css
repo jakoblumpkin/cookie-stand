@@ -2,6 +2,10 @@ body {
 }
 article {
   display: flex;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
 }
 
 tr {
