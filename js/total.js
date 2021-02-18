@@ -4,9 +4,16 @@ var data=document.getElementsByTagName("TD");
 function findTotal(num){
     let totalList=[];
     for(let i=0; i<5; i++){
-        totalList.push(data[num].innerHTMl);
+        totalList.push(parseInt(data[num].innerHTML));
         num=num+15;
     }
+
     return totalList;
 }
-console.log(findTotal(0));
+
+//Finds Total of each column
+let dataPosition=75;
+for(let i=0; i<=14; i++){
+    data[dataPosition].innerHTML=sumallnumbers(findTotal(i));
+    dataPosition++;
+}
