@@ -1,0 +1,21 @@
+body {
+}
+article {
+  display: flex;
+}
+
+tr {
+  top-margin: 10px;
+}
+
+article div h4 {
+  margin: 3.7px 0;
+}
+article div {
+  position: relative;
+  top: 24px;
+}
+
+td {
+  text-align: center;
+}
