@@ -27,7 +27,7 @@ let standC=new CookieStand('Dubai', 11, 38, 3.7);
 let standD=new CookieStand('Paris', 20, 38, 2.3);
 let standE=new CookieStand('Lima', 2, 16, 4.6);
 
-
+var data=document.getElementsByTagName("TD");
 
 function firstRow (){
     let randomItems=[];

@@ -6,12 +6,14 @@
     <body>
         <article>
             <div>
+                <h4></h4>
                 <h4>Seattle</h4>
                 <h4>Tokyo</h4>
                 <h4>Dubai</h4>
                 <h4>Paris</h4>
                 <h4>Lima</h4>
                 <h4>Totals</h4>
+                <h4></h4>
             </div>
             <table>
                 <th>6:00am</th>
@@ -131,8 +133,43 @@
                     <td>21</td>
                     <td>21</td>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
             </table>
        </article>
+       <hr> 
+       <form>
+           <fieldset>
+                <h2>Add New Location to Chart</h2>
+                <label for="location">Location:</label>
+                <input id="location" type="text"><br> 
+
+                <label for="minCust">Minimum Customers per Hour:</label>
+                <input id="minCust" type="number"><br> 
+
+                <label for="maxCust">Maximum Customers per Hour:</label>
+                <input id="maxCust" type="number"><br> 
+
+                <label for="avgSale">Average Sale per person:</label>
+                <input id="avgSale" type="number"><br> 
+                <button id="submitButton">Submit</button>
+           </fieldset>
+       </form>
 
 
 
@@ -144,5 +181,6 @@
     <script src="js/app3.js"></script>
     <script src="js/app4.js"></script>
     <script src="js/total.js"></script>
+    <script src="js/adddata.js"></script>
     </body>
 </html>

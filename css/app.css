@@ -23,3 +23,29 @@ article div {
 td {
   text-align: center;
 }
+
+form {
+  position: relative;
+  top: 40px;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+fieldset {
+  display: inline;
+  margin: auto;
+  width: 55%;
+}
+
+button {
+  width: 40%;
+  height: 30px;
+  margin-top: 15px;
+  margin: 15px auto;
+}
+
+h2 {
+  text-align: center;
+}
