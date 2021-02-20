@@ -7,6 +7,19 @@ var newTitle=document.getElementsByTagName("H4");
 
 function grabData(event){
     event.preventDefault();
+    console.log(event.target.location.value, event.target.minCust.value);//
+    const inputStand=new CookieStand(event.target.location.value,
+                                   parseInt(event.target.minCust.value),
+                                   parseInt(event.target.maxCust.value),
+                                   parseFloat(event.target.avgSale.value));
+    console.log(inputStand);
+
+}
+
+
+
+function grabDataold(event){
+    event.preventDefault();
     newlocation=newlocation.value;
     newmin=parseInt(newmin.value);
     newmax=parseInt(newmax.value);
@@ -31,7 +44,7 @@ function grabData(event){
 
 
 
-
-submitButton.addEventListener('click', grabData);
+const addLocationform=document.getElementById("addLocationform");
+addLocationform.addEventListener('submit', grabData);
 
 

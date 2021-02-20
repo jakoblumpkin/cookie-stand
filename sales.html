@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel="stylesheet" href="css/app.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.css"/>
     </head>
     <body>
+        <div id="headerSection">
+            <h1>Hourly Sales Chart</h1>
+            <div>
+                <a href="/"><h3>Homepage</h3></a>
+                <a href="sales.html"><h3>About</h3></a>
+            </div>
+        </div>
+        <hr>
         <article>
             <div>
                 <h4></h4>
@@ -48,6 +58,7 @@
                     <td>21</td>
                     <td>21</td>
                 </tr>
+              
                 <tr>
                     <td>21</td>
                     <td>21</td>
@@ -65,6 +76,7 @@
                     <td>21</td>
                     <td>21</td>
                 </tr>
+
                 <tr>
                     <td>21</td>
                     <td>21</td>
@@ -153,20 +165,20 @@
             </table>
        </article>
        <hr> 
-       <form>
+       <form id="addLocationform">
            <fieldset>
                 <h2>Add New Location to Chart</h2>
                 <label for="location">Location:</label>
-                <input id="location" type="text"><br> 
+                <input id="location" name="location" type="text" required><br> 
 
                 <label for="minCust">Minimum Customers per Hour:</label>
-                <input id="minCust" type="number"><br> 
+                <input id="minCust" name="minCust"type="number" required><br> 
 
                 <label for="maxCust">Maximum Customers per Hour:</label>
-                <input id="maxCust" type="number"><br> 
+                <input id="maxCust" name="maxCust" type="number" required><br> 
 
                 <label for="avgSale">Average Sale per person:</label>
-                <input id="avgSale" type="number"><br> 
+                <input id="avgSale"  name="avgSale" type="float" step="0.01"required><br> 
                 <button id="submitButton">Submit</button>
            </fieldset>
        </form>
