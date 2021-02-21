@@ -47,6 +47,8 @@ button {
   height: 30px;
   margin-top: 15px;
   margin: 15px auto;
+  background-color: black;
+  color: white;
 }
 
 h2 {

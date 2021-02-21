@@ -1,18 +1,34 @@
-var newlocation=document.getElementById("location");
-var newmin=document.getElementById("minCust");
-var newmax=document.getElementById("maxCust");
-var avgSale=document.getElementById("avgSale");
-var submitButton=document.getElementById("submitButton");
-var newTitle=document.getElementsByTagName("H4");
 
+
+//action after button is clicked
 function grabData(event){
     event.preventDefault();
-    console.log(event.target.location.value, event.target.minCust.value);//
+    let myTable = document.getElementById("myTable");
     const inputStand=new CookieStand(event.target.location.value,
                                    parseInt(event.target.minCust.value),
                                    parseInt(event.target.maxCust.value),
                                    parseFloat(event.target.avgSale.value));
-    console.log(inputStand);
+    let getTitle=document.getElementById("getTitle");
+    let Row=myTable.insertRow(6);
+    let totalList=[];
+    let totalRow=document.getElementById("totalRow");
+    let num=1;
+    for(let i=0; i<=13; i++){
+        let randomNum=findRandomRange(inputStand.mincust, inputStand.maxcust);
+        Row.insertCell(i).innerHTML=randomNum;
+        totalList.push(randomNum);
+
+        /*let total=totalRow.childNodes[num].innerHTML;
+        totalRow.childNodes[num].innerHTML=total+randomNum;
+        num=num+2;*/
+    }
+    Row.insertCell(14).innerHTML=sumallnumbers(totalList);
+    
+
+    let TitleTag=document.createElement("h4");
+    getTitle.appendChild(TitleTag);
+    TitleTag.textContent=inputStand.location;
+
 
 }
 
